@@ -18,95 +18,42 @@ A Powerful Multi-Device WhatsApp Bot Built For Speed, Stability & Simplicity.
 
 🚀 DEPLOY TO WEB HOSTS
 
-<p align="center"><a href="YOUR_HEROKU_LINK">
+<p align="center">
+
+<a href="https://heroku.com/deploy">
 <img src="https://img.shields.io/badge/DEPLOY_TO_HEROKU-purple?style=for-the-badge&logo=heroku&logoColor=white">
-</a><a href="YOUR_RENDER_LINK">
-<img src="https://img.shields.io/badge/DEPLOY_TO_RENDER-cyan?style=for-the-badge&logo=render&logoColor=black">
-</a><a href="YOUR_RAILWAY_LINK">
-<img src="https://img.shields.io/badge/DEPLOY_TO_RAILWAY-black?style=for-the-badge&logo=railway&logoColor=cyan">
-</a><a href="YOUR_KOYEB_LINK">
-<img src="https://img.shields.io/badge/DEPLOY_TO_KOYEB-cyan?style=for-the-badge">
-</a><a href="YOUR_REPLIT_LINK">
-<img src="https://img.shields.io/badge/DEPLOY_TO_REPLIT-black?style=for-the-badge&logo=replit&logoColor=cyan">
-</a><a href="YOUR_CODESPACE_LINK">
-<img src="https://img.shields.io/badge/DEPLOY_TO_CODESPACES-cyan?style=for-the-badge&logo=github&logoColor=black">
-</a><a href="YOUR_GLITCH_LINK">
-<img src="https://img.shields.io/badge/DEPLOY_TO_GLITCH-black?style=for-the-badge&logo=glitch&logoColor=cyan">
-</a><a href="YOUR_VERCEL_LINK">
-<img src="https://img.shields.io/badge/DEPLOY_TO_VERCEL-cyan?style=for-the-badge&logo=vercel&logoColor=black">
-</a><a href="YOUR_NETLIFY_LINK">
-<img src="https://img.shields.io/badge/DEPLOY_TO_NETLIFY-black?style=for-the-badge&logo=netlify&logoColor=cyan">
-</a></p>---
-
-🎛️ DEPLOY TO PANELS
-
-<p align="center"><a href="YOUR_KATABUMP_LINK">
-<img src="https://img.shields.io/badge/KATABUMP-cyan?style=for-the-badge">
-</a><a href="YOUR_PTERODACTYL_LINK">
-<img src="https://img.shields.io/badge/PTERODACTYL_PANEL-black?style=for-the-badge">
-</a><a href="YOUR_SKYPORT_LINK">
-<img src="https://img.shields.io/badge/SKYPORT_PANEL-cyan?style=for-the-badge">
-</a><a href="YOUR_NEBULA_LINK">
-<img src="https://img.shields.io/badge/NEBULA_PANEL-black?style=for-the-badge">
-</a><a href="YOUR_CONTROL_PANEL_LINK">
-<img src="https://img.shields.io/badge/BOT_HOSTING_PANEL-cyan?style=for-the-badge">
-</a><a href="YOUR_VPS_LINK">
-<img src="https://img.shields.io/badge/VPS_HOSTING-black?style=for-the-badge">
-</a></p>---
-
-📺 DEPLOYMENT VIDEO
-
-<p align="center">
-<a href="YOUR_YOUTUBE_VIDEO_LINK">
-<img src="https://img.shields.io/badge/WATCH_DEPLOYMENT_VIDEO-red?style=for-the-badge&logo=youtube&logoColor=white">
 </a>
-</p>---
 
-📢 COMMUNITY
+<a href="https://dashboard.render.com/">
+<img src="https://img.shields.io/badge/DEPLOY_TO_RENDER-cyan?style=for-the-badge&logo=render&logoColor=black">
+</a>
 
-<p align="center"><a href="https://chat.whatsapp.com/K1CZsGzSk6t8Rw4t81fHEI">
-<img src="https://img.shields.io/badge/JOIN_WHATSAPP_GROUP-black?style=for-the-badge&logo=whatsapp&logoColor=cyan">
-</a><a href="https://whatsapp.com/channel/0029VbBvGgyFsn0alyIDjw0z">
-<img src="https://img.shields.io/badge/JOIN_WHATSAPP_CHANNEL-cyan?style=for-the-badge&logo=whatsapp&logoColor=black">
-</a></p>---
+<a href="https://railway.app/new">
+<img src="https://img.shields.io/badge/DEPLOY_TO_RAILWAY-black?style=for-the-badge&logo=railway&logoColor=cyan">
+</a>
 
-✨ FEATURES
+<a href="https://app.koyeb.com/">
+<img src="https://img.shields.io/badge/DEPLOY_TO_KOYEB-cyan?style=for-the-badge">
+</a>
 
-✅ 500+ Commands
-✅ AI ChatBot
-✅ Multi-Device Support
-✅ Group Management
-✅ Downloaders
-✅ Logo Maker
-✅ Anime Commands
-✅ Audio Editor
-✅ Video Editor
-✅ Games
-✅ Search Commands
-✅ Auto Features
-✅ Owner Commands
-✅ Admin Commands
-✅ Utility Commands
+<a href="https://replit.com/">
+<img src="https://img.shields.io/badge/DEPLOY_TO_REPLIT-black?style=for-the-badge&logo=replit&logoColor=cyan">
+</a>
 
----
+<a href="https://github.com/features/codespaces">
+<img src="https://img.shields.io/badge/DEPLOY_TO_CODESPACES-cyan?style=for-the-badge&logo=github&logoColor=black">
+</a>
 
-👑 OWNER
+<a href="https://glitch.com/">
+<img src="https://img.shields.io/badge/DEPLOY_TO_GLITCH-black?style=for-the-badge&logo=glitch&logoColor=cyan">
+</a>
 
-<p align="center"><a href="https://github.com/Xchristech2">
-<img src="https://img.shields.io/badge/GITHUB-Xchristech2-cyan?style=for-the-badge&logo=github&logoColor=black">
-</a><a href="https://wa.me/2348069675806">
-<img src="https://img.shields.io/badge/WHATSAPP-Chris_Gaaju-black?style=for-the-badge&logo=whatsapp&logoColor=cyan">
-</a></p>---
+<a href="https://vercel.com/">
+<img src="https://img.shields.io/badge/DEPLOY_TO_VERCEL-cyan?style=for-the-badge&logo=vercel&logoColor=black">
+</a>
 
-⚠️ NOTICE
+<a href="https://netlify.com/">
+<img src="https://img.shields.io/badge/DEPLOY_TO_NETLIFY-black?style=for-the-badge&logo=netlify&logoColor=cyan">
+</a>
 
-- Do Not Sell This Script
-- Give Credits When Re-uploading
-- Use At Your Own Risk
-- Developer Is Not Responsible For Any Misuse
-
----
-
-<p align="center">
-<img src="https://img.shields.io/badge/GAAJU--XMD-Fast_•_Stable_•_Powerful-cyan?style=for-the-badge">
 </p>
