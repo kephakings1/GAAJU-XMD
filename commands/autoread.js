@@ -1,5 +1,5 @@
 /**
- * WALLYJAYTECH-MD - A WhatsApp Bot
+ * GAAJU-XMD - A WhatsApp Bot
  * Autoread Command - Automatically read all messages
  * Professional Version
  */
