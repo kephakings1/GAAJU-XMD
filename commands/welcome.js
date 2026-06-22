@@ -64,7 +64,7 @@ async function handleJoinEvent(sock, id, participants) {
         const groupDesc = groupMetadata.desc || '';
         const memberCount = groupMetadata.participants.length;
         const timeString = getFormattedTime();
-        const botName = settings.botName || 'WALLYJAYTECH-MD';
+        const botName = settings.botName || 'GAAJU-XMD';
 
         let groupPic = null;
         try { groupPic = await sock.profilePictureUrl(id, 'image'); } catch (e) {}
