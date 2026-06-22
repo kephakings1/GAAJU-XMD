@@ -25,7 +25,7 @@ function updateUserStats(userJid, platform) {
         const dataDir = path.dirname(statsPath);
         if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
         
-        let stats = { totalUsers: 0, activeUsers: {}, platforms: {}, users: {}, lastUpdated: Date.now(), botName: settings.botName || 'GAAJU-XMD', version: settings.version || '1.0.0' };
+        let stats = { totalUsers: 0, activeUsers: {}, platforms: {}, users: {}, lastUpdated: Date.now(), botName: settings.botName || 'WALLYJAYTECH-MD', version: settings.version || '1.0.0' };
         
         if (fs.existsSync(statsPath)) {
             try { stats = JSON.parse(fs.readFileSync(statsPath, 'utf8')); } catch (e) {}
@@ -63,14 +63,14 @@ function updateUserStats(userJid, platform) {
 function getUserStats() {
     try {
         const statsPath = path.join(__dirname, '../data/userStats.json');
-        if (!fs.existsSync(statsPath)) return { totalUsers: 0, activeUsers: 0, platforms: {}, isGlobal: false, source: 'Local Storage', botName: settings.botName || 'Gᴀᴀᴊᴜ-Xᴍᴅ', version: settings.version || '1.0.0' };
+        if (!fs.existsSync(statsPath)) return { totalUsers: 0, activeUsers: 0, platforms: {}, isGlobal: false, source: 'Local Storage', botName: settings.botName || 'WALLYJAYTECH-MD', version: settings.version || '1.0.0' };
         const stats = JSON.parse(fs.readFileSync(statsPath, 'utf8'));
         const currentTime = Date.now();
         const thirtyMinutesAgo = currentTime - (30 * 60 * 1000);
         Object.keys(stats.activeUsers || {}).forEach(key => {
             if (stats.activeUsers[key] < thirtyMinutesAgo) delete stats.activeUsers[key];
         });
-        return { totalUsers: stats.totalUsers || Object.keys(stats.users || {}).length, activeUsers: Object.keys(stats.activeUsers || {}).length, platforms: stats.platforms || {}, isGlobal: false, source: 'Local Storage', botName: stats.botName || settings.botName || 'GAAJU-XMD', version: stats.version || settings.version || '1.0.0' };
+        return { totalUsers: stats.totalUsers || Object.keys(stats.users || {}).length, activeUsers: Object.keys(stats.activeUsers || {}).length, platforms: stats.platforms || {}, isGlobal: false, source: 'Local Storage', botName: stats.botName || settings.botName || 'WALLYJAYTECH-MD', version: stats.version || settings.version || '1.0.0' };
     } catch (error) { return { totalUsers: 0, activeUsers: 0, platforms: {}, isGlobal: false, source: 'Error' }; }
 }
 
@@ -212,302 +212,303 @@ ${platformStatsText}
 ║   *📡 Tracking: Local Storage ✅*
 ║
 ╚═══════════════════╝
-Powered by Chris Gaaju
 
 *⬇️ ALL COMMANDS ⬇️*
 
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ ⟿⟿⟿ OWNER COMMANDS ⟿⟿⟿ ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
+╔═══════════════════╗
+║
+║  *🔒OWNER CMDS🔒*
+║
+║ *🔺${prefix}mode <public/private>*
+║ *🔺${prefix}menufont <1-12>*
+║ *🔺${prefix}autorecord*
+║ *🔺${prefix}autotyping*
+║ *🔺${prefix}autorecordtype*
+║ *🔺${prefix}autostatus <on/off>*
+║ *🔺${prefix}autostatus react <on/off>*
+║ *🔺${prefix}autoreact <on/off>*
+║ *🔺${prefix}autoread <on/off>*
+║ *🔺${prefix}antiforeign*
+║ *🔺${prefix}join*
+║ *🔺${prefix}poll/${prefix}vote*
+║ *🔺${prefix}block*
+║ *🔺${prefix}unblock*
+║ *🔺${prefix}getpp*
+║ *🔺${prefix}leave*
+║ *🔺${prefix}clearsession*
+║ *🔺${prefix}antidelete*
+║ *🔺${prefix}tempfile*
+║ *🔺${prefix}cleartmp*
+║ *🔺${prefix}checkupdate*
+║ *🔺${prefix}updateinfo*
+║ *🔺${prefix}update*
+║ *🔺${prefix}botinfo*
+║ *🔺${prefix}setprefix*
+║ *🔺${prefix}setbotname*
+║ *🔺${prefix}setbotowner*
+║ *🔺${prefix}setownernumber*
+║ *🔺${prefix}setytchannel*
+║ *🔺${prefix}setpackname*
+║ *🔺${prefix}setauthor*
+║ *🔺${prefix}settimezone*
+║ *🔺${prefix}confighelp*
+║ *🔺${prefix}restart*
+║ *🔺${prefix}sudo*
+║ *🔺${prefix}settings*
+║ *🔺${prefix}setpp <reply to image>*
+║ *🔺${prefix}anticall <on/off>*
+║ *🔺${prefix}pmblocker <on/off/status>*
+║ *🔺${prefix}pmblocker setmsg <text>*
+║ *🔺${prefix}setmention <reply to msg>*
+║ *🔺${prefix}mention <on/off>*
+║
+╚═══════════════════╝
 
-⟿ ${prefix}mode <public/private>
-⟿ ${prefix}menufont <1-12>
-⟿ ${prefix}autorecord
-⟿ ${prefix}autotyping
-⟿ ${prefix}autorecordtype
-⟿ ${prefix}autostatus <on/off>
-⟿ ${prefix}autostatus react <on/off>
-⟿ ${prefix}autoreact <on/off>
-⟿ ${prefix}autoread <on/off>
-⟿ ${prefix}antiforeign
-⟿ ${prefix}join
-⟿ ${prefix}poll / ${prefix}vote
-⟿ ${prefix}block
-⟿ ${prefix}unblock
-⟿ ${prefix}getpp
-⟿ ${prefix}leave
-⟿ ${prefix}clearsession
-⟿ ${prefix}antidelete
-⟿ ${prefix}tempfile
-⟿ ${prefix}cleartmp
-⟿ ${prefix}checkupdate
-⟿ ${prefix}updateinfo
-⟿ ${prefix}update
-⟿ ${prefix}botinfo
-⟿ ${prefix}setprefix
-⟿ ${prefix}setbotname
-⟿ ${prefix}setbotowner
-⟿ ${prefix}setownernumber
-⟿ ${prefix}setytchannel
-⟿ ${prefix}setpackname
-⟿ ${prefix}setauthor
-⟿ ${prefix}settimezone
-⟿ ${prefix}confighelp
-⟿ ${prefix}restart
-⟿ ${prefix}sudo
-⟿ ${prefix}settings
-⟿ ${prefix}setpp <reply to image>
-⟿ ${prefix}anticall <on/off>
-⟿ ${prefix}pmblocker <on/off/status>
-⟿ ${prefix}pmblocker setmsg <text>
-⟿ ${prefix}setmention <reply to msg>
-⟿ ${prefix}mention <on/off>
+╔═══════════════════╗
+║
+║ *👨‍👩‍👧‍👦GROUP CMDS👨‍👩‍👧‍👦*
+║
+║ *🔹${prefix}ban @user*
+║ *🔹${prefix}unban @user*
+║ *🔹${prefix}promote @user*
+║ *🔹${prefix}demote @user*
+║ *🔹${prefix}mute <minutes>*
+║ *🔹${prefix}unmute*
+║ *🔹${prefix}delete*
+║ *🔹${prefix}kick @user*
+║ *🔹${prefix}ship*
+║ *🔹${prefix}stupid @user <text>*
+║ *🔹${prefix}warnings @user*
+║ *🔹${prefix}warn @user*
+║ *🔹${prefix}antilink*
+║ *🔹${prefix}antibadword*
+║ *🔹${prefix}antibot*
+║ *🔹${prefix}groupinfo*
+║ *🔹${prefix}admins*
+║ *🔹${prefix}jid*
+║ *🔹${prefix}tag <message>*
+║ *🔹${prefix}tagall*
+║ *🔹${prefix}tagnotadmin*
+║ *🔹${prefix}hidetag <message>*
+║ *🔹${prefix}chatbot*
+║ *🔹${prefix}resetlink*
+║ *🔹${prefix}antitag <on/off>*
+║ *🔹${prefix}welcome <on/off>*
+║ *🔹${prefix}goodbye <on/off>*
+║ *🔹${prefix}setgdesc <description>*
+║ *🔹${prefix}setgname <new name>*
+║ *🔹${prefix}setgpp (reply to image)*
+║
+╚═══════════════════╝
 
-╰━━━━━━━━━━━━━━━━━━━━━━╯
+╔═══════════════════╗
+║
+║ *🎨STICKER CMDS🎨*
+║
+║ *🔻${prefix}blur <image>*
+║ *🔻${prefix}simage <reply to sticker>*
+║ *🔻${prefix}sticker <reply to img or vid>*
+║ *🔻${prefix}removebg*
+║ *🔻${prefix}remini*
+║ *🔻${prefix}crop <reply to image>*
+║ *🔻${prefix}tgsticker <Link>*
+║ *🔻${prefix}meme*
+║ *🔻${prefix}take <packname>*
+║ *🔻${prefix}emojimix <emj1>+<emj2>*
+║ *🔻${prefix}igs <insta link>*
+║ *🔻${prefix}igsc <insta link>*
+║
+╚═══════════════════╝
 
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ ⟿⟿⟿ GROUP COMMANDS ⟿⟿⟿ ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
+╔═══════════════════╗
+║
+║ *📩WHATSAPP CMDS📩*
+║
+║ *🟤${prefix}clear*
+║
+╚═══════════════════╝
 
-⟿ ${prefix}ban @user
-⟿ ${prefix}unban @user
-⟿ ${prefix}promote @user
-⟿ ${prefix}demote @user
-⟿ ${prefix}mute <minutes>
-⟿ ${prefix}unmute
-⟿ ${prefix}delete
-⟿ ${prefix}kick @user
-⟿ ${prefix}ship
-⟿ ${prefix}stupid @user <text>
-⟿ ${prefix}warnings @user
-⟿ ${prefix}warn @user
-⟿ ${prefix}antilink
-⟿ ${prefix}antibadword
-⟿ ${prefix}antibot
-⟿ ${prefix}groupinfo
-⟿ ${prefix}admins
-⟿ ${prefix}jid
-⟿ ${prefix}tag <message>
-⟿ ${prefix}tagall
-⟿ ${prefix}tagnotadmin
-⟿ ${prefix}hidetag <message>
-⟿ ${prefix}chatbot
-⟿ ${prefix}resetlink
-⟿ ${prefix}antitag <on/off>
-⟿ ${prefix}welcome <on/off>
-⟿ ${prefix}goodbye <on/off>
-⟿ ${prefix}setgdesc <description>
-⟿ ${prefix}setgname <new name>
-⟿ ${prefix}setgpp (reply to image)
+╔═══════════════════╗
+║
+║  *🖼️PIES CMDS🖼️*
+║
+║ *▫️${prefix}pies <country>*
+║ *▫️${prefix}china*
+║ *▫️${prefix}indonesia*
+║ *▫️${prefix}japan*
+║ *▫️${prefix}korea*
+║ *▫️${prefix}hijab*
+║
+╚═══════════════════╝
 
-╰━━━━━━━━━━━━━━━━━━━━━━╯
+╔═══════════════════╗
+║
+║  *🎮GAME CMDS🎮*
+║
+║ *◾️${prefix}tictactoe @user*
+║ *◾️${prefix}hangman*
+║ *◾️${prefix}guess <letter>*
+║ *◾️${prefix}trivia*
+║ *◾️${prefix}answer <answer>*
+║ *◾️${prefix}truth*
+║ *◾️${prefix}dare*
+║ *◾️${prefix}coinflip*
+║ *◾️${prefix}coinflip <heads/tails>*
+║ *◾️${prefix}coinflip <heads/tails> <bet>*
+║ *◾️${prefix}coinstats*
+║ *◾️${prefix}coinleaderboard*
+║ *◾️${prefix}coindaily*
+║ *◾️${prefix}buychips*
+║ *◾️${prefix}coinhelp*
+║
+╚═══════════════════╝
 
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ 🎨 STICKER COMMANDS 🎨 ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
+╔═══════════════════╗
+║
+║   *🧠AI CMDS🧠*
+║
+║ *♦️${prefix}gpt <question>*
+║ *♦️${prefix}gemini <question>*
+║ *♦️${prefix}imagine <prompt>*
+║ *♦️${prefix}flux <prompt>*
+║ *♦️${prefix}sora <prompt>*
+║
+╚═══════════════════╝
 
-⟿ ${prefix}blur <image>
-⟿ ${prefix}simage <reply to sticker>
-⟿ ${prefix}sticker <reply to image/video>
-⟿ ${prefix}removebg
-⟿ ${prefix}remini
-⟿ ${prefix}crop <reply to image>
-⟿ ${prefix}tgsticker <link>
-⟿ ${prefix}meme
-⟿ ${prefix}take <packname>
-⟿ ${prefix}emojimix <emoji1>+<emoji2>
-⟿ ${prefix}igs <insta link>
-⟿ ${prefix}igsc <insta link>
+╔═══════════════════╗
+║
+║  *😁FUN CMDS😁*
+║
+║ *🟢${prefix}compliment @user*
+║ *🟢${prefix}insult @user*
+║ *🟢${prefix}flirt*
+║ *🟢${prefix}poet*
+║ *🟢${prefix}goodnight*
+║ *🟢${prefix}roseday*
+║ *🟢${prefix}character @user*
+║ *🟢${prefix}wasted @user*
+║ *🟢${prefix}simp @user*
+║
+╚═══════════════════╝
 
-╰━━━━━━━━━━━━━━━━━━━━━━╯
+╔═══════════════════╗
+║
+║ *🔤EPHOTO CMDS🔤*
+║
+║ *🔴${prefix}metallic <text>*
+║ *🔴${prefix}ice <text>*
+║ *🔴${prefix}snow <text>*
+║ *🔴${prefix}impressive <text>*
+║ *🔴${prefix}matrix <text>*
+║ *🔴${prefix}light <text>*
+║ *🔴${prefix}neon <text>*
+║ *🔴${prefix}devil <text>*
+║ *🔴${prefix}purple <text>*
+║ *🔴${prefix}thunder <text>*
+║ *🔴${prefix}leaves <text>*
+║ *🔴${prefix}1917 <text>*
+║ *🔴${prefix}arena <text>*
+║ *🔴${prefix}hacker <text>*
+║ *🔴${prefix}sand <text>*
+║ *🔴${prefix}blackpink <text>*
+║ *🔴${prefix}glitch <text>*
+║ *🔴${prefix}fire <text>*
+║
+╚═══════════════════╝
 
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ 📩 WHATSAPP COMMANDS 📩 ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
+╔═══════════════════╗
+║
+║ *📥DOWNLOAD CMDS📥*
+║
+║ *🟠${prefix}play <song name>*
+║ *🟠${prefix}song <song name>*
+║ *🟠${prefix}spotify <query>*
+║ *🟠${prefix}instagram <link>*
+║ *🟠${prefix}facebook <link>*
+║ *🟠${prefix}tiktok <link>*
+║ *🟠${prefix}video <song name>*
+║ *🟠${prefix}ytmp4 <Link>*
+║
+╚═══════════════════╝
 
-⟿ ${prefix}clear
+╔═══════════════════╗
+║
+║ *🧩MISC CMDS🧩*
+║
+║ *🟡${prefix}heart*
+║ *🟡${prefix}horny*
+║ *🟡${prefix}circle*
+║ *🟡${prefix}lgbt*
+║ *🟡${prefix}lolice*
+║ *🟡${prefix}tonikawa*
+║ *🟡${prefix}its-so-stupid*
+║ *🟡${prefix}namecard*
+║ *🟡${prefix}oogway*
+║ *🟡${prefix}oogway2*
+║ *🟡${prefix}tweet*
+║ *🟡${prefix}ytcomment*
+║ *🟡${prefix}comrade*
+║ *🟡${prefix}gay* 
+║ *🟡${prefix}glass* 
+║ *🟡${prefix}jail*
+║ *🟡${prefix}passed*
+║ *🟡${prefix}triggered*
+║
+╚═══════════════════╝
 
-╰━━━━━━━━━━━━━━━━━━━━━━╯
+╔═══════════════════╗
+║
+║  *🦹‍♀️ANIME CMDS🦹‍♀️*
+║
+║ *🟣${prefix}nom* 
+║ *🟣${prefix}poke* 
+║ *🟣${prefix}cry* 
+║ *🟣${prefix}kiss*
+║ *🟣${prefix}pat* 
+║ *🟣${prefix}hug*
+║ *🟣${prefix}wink*
+║ *🟣${prefix}facepalm*
+║
+╚═══════════════════╝
 
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ 🖼️ PIES COMMANDS 🖼️ ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
+╔═══════════════════╗
+║                   
+║ *💻GITHUB CMDS💻*
+║
+║ *🔵${prefix}git*
+║ *🔵${prefix}github*
+║ *🔵${prefix}sc*
+║ *🔵${prefix}script*
+║ *🔵${prefix}repo*
+║
+╚═══════════════════╝
 
-⟿ ${prefix}pies <country>
-⟿ ${prefix}china
-⟿ ${prefix}indonesia
-⟿ ${prefix}japan
-⟿ ${prefix}korea
-⟿ ${prefix}hijab
+╔═══════════════════╗
+║                        
+║ *🌐GENERAL CMDS🌐*   
+║                        
+║ *🔸${prefix}help or ${prefix}menu*      
+║ *🔸${prefix}ping*            
+║ *🔸${prefix}alive*              
+║ *🔸${prefix}tts <text>*          
+║ *🔸${prefix}owner*               
+║ *🔸${prefix}joke*                
+║ *🔸${prefix}quote*               
+║ *🔸${prefix}fact*                
+║ *🔸${prefix}weather <city>*      
+║ *🔸${prefix}news*                
+║ *🔸${prefix}attp <text>*         
+║ *🔸${prefix}lyrics <songtitle>*
+║ *🔸${prefix}8ball <question>*    
+║ *🔸${prefix}vv*                  
+║ *🔸${prefix}trt <text> <lang>*  
+║ *🔸${prefix}ss <link>*          
+║ *🔸${prefix}url*        
+║ *🔸${prefix}getjid* 
+║                       
+╚═══════════════════╝ 
 
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ 🎮 GAME COMMANDS 🎮 ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-⟿ ${prefix}tictactoe @user
-⟿ ${prefix}hangman
-⟿ ${prefix}guess <letter>
-⟿ ${prefix}trivia
-⟿ ${prefix}answer <answer>
-⟿ ${prefix}truth
-⟿ ${prefix}dare
-⟿ ${prefix}coinflip
-⟿ ${prefix}coinflip <heads/tails>
-⟿ ${prefix}coinflip <heads/tails> <bet>
-⟿ ${prefix}coinstats
-⟿ ${prefix}coinleaderboard
-⟿ ${prefix}coindaily
-⟿ ${prefix}buychips
-⟿ ${prefix}coinhelp
-
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ 🧠 AI COMMANDS 🧠 ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-⟿ ${prefix}gpt <question>
-⟿ ${prefix}gemini <question>
-⟿ ${prefix}imagine <prompt>
-⟿ ${prefix}flux <prompt>
-⟿ ${prefix}sora <prompt>
-
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ 😁 FUN COMMANDS 😁 ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-⟿ ${prefix}compliment @user
-⟿ ${prefix}insult @user
-⟿ ${prefix}flirt
-⟿ ${prefix}poet
-⟿ ${prefix}goodnight
-⟿ ${prefix}roseday
-⟿ ${prefix}character @user
-⟿ ${prefix}wasted @user
-⟿ ${prefix}simp @user
-
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ 🔤 EPHOTO COMMANDS 🔤 ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-⟿ ${prefix}metallic <text>
-⟿ ${prefix}ice <text>
-⟿ ${prefix}snow <text>
-⟿ ${prefix}impressive <text>
-⟿ ${prefix}matrix <text>
-⟿ ${prefix}light <text>
-⟿ ${prefix}neon <text>
-⟿ ${prefix}devil <text>
-⟿ ${prefix}purple <text>
-⟿ ${prefix}thunder <text>
-⟿ ${prefix}leaves <text>
-⟿ ${prefix}1917 <text>
-⟿ ${prefix}arena <text>
-⟿ ${prefix}hacker <text>
-⟿ ${prefix}sand <text>
-⟿ ${prefix}blackpink <text>
-⟿ ${prefix}glitch <text>
-⟿ ${prefix}fire <text>
-
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ 📥 DOWNLOAD COMMANDS 📥 ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-⟿ ${prefix}play <song name>
-⟿ ${prefix}song <song name>
-⟿ ${prefix}spotify <query>
-⟿ ${prefix}instagram <link>
-⟿ ${prefix}facebook <link>
-⟿ ${prefix}tiktok <link>
-⟿ ${prefix}video <song name>
-⟿ ${prefix}ytmp4 <link>
-
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ 🧩 MISC COMMANDS 🧩 ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-⟿ ${prefix}heart
-⟿ ${prefix}horny
-⟿ ${prefix}circle
-⟿ ${prefix}lgbt
-⟿ ${prefix}lolice
-⟿ ${prefix}tonikawa
-⟿ ${prefix}its-so-stupid
-⟿ ${prefix}namecard
-⟿ ${prefix}oogway
-⟿ ${prefix}oogway2
-⟿ ${prefix}tweet
-⟿ ${prefix}ytcomment
-⟿ ${prefix}comrade
-⟿ ${prefix}gay
-⟿ ${prefix}glass
-⟿ ${prefix}jail
-⟿ ${prefix}passed
-⟿ ${prefix}triggered
-
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ 🦹‍♀️ ANIME COMMANDS 🦹‍♀️ ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-⟿ ${prefix}nom
-⟿ ${prefix}poke
-⟿ ${prefix}cry
-⟿ ${prefix}kiss
-⟿ ${prefix}pat
-⟿ ${prefix}hug
-⟿ ${prefix}wink
-⟿ ${prefix}facepalm
-
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ 💻 GITHUB COMMANDS 💻 ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-⟿ ${prefix}git
-⟿ ${prefix}github
-⟿ ${prefix}sc
-⟿ ${prefix}script
-⟿ ${prefix}repo
-
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ 🌐 GENERAL COMMANDS 🌐 ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-⟿ ${prefix}help / ${prefix}menu
-⟿ ${prefix}ping
-⟿ ${prefix}alive
-⟿ ${prefix}tts <text>
-⟿ ${prefix}owner
-⟿ ${prefix}joke
-⟿ ${prefix}quote
-⟿ ${prefix}fact
-⟿ ${prefix}weather <city>
-⟿ ${prefix}news
-⟿ ${prefix}attp <text>
-⟿ ${prefix}lyrics <songtitle>
-⟿ ${prefix}8ball <question>
-⟿ ${prefix}vv
-⟿ ${prefix}trt <text> <lang>
-⟿ ${prefix}ss <link>
-⟿ ${prefix}url
-⟿ ${prefix}getjid
-
-╰━━━━━━━━━━━━━━━━━━━━━━╯
+    🟡 *Copyright Chris Gaaju 2026* 🟡
 
 *📊 Total Commands: ${totalCommands}*
 
@@ -515,85 +516,35 @@ Powered by Chris Gaaju
 
 *${greeting.emoji} ${greeting.greeting}, @${userName}! ${greeting.message}*
 
-*⬇️Join our channel below for updates⬇️*`;
+*⬇️Join our channel below for updates⬇️`;
+
+    // Apply font to menu text
+    const styledMessage = applyFont(helpMessage, fontId);
 
     try {
-        // Send the appropriate media based on menuType
         if (menuType === 'IMAGE') {
             const imageBuffer = fs.readFileSync(imagePath);
             await sock.sendMessage(chatId, {
-                image: imageBuffer,
-                caption: helpMessage,
-                mentions: [senderId],
-                contextInfo: {
-                    forwardingScore: 1,
-                    isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363406588763460@newsletter',
-                        newsletterName: 'Gᴀᴀᴊᴜ-Xᴍᴅ',
-                        serverMessageId: -1
-                    }
-                }
+                image: imageBuffer, caption: styledMessage, mentions: [senderId],
+                contextInfo: { forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363406588763460@newsletter', newsletterName: 'Gᴀᴀᴊᴜ-Xᴍᴅ', serverMessageId: -1 } }
             }, { quoted: message });
-            console.log(`✅ Menu sent as IMAGE to @${senderId.split('@')[0]}`);
-        }
-        else if (menuType === 'VIDEO') {
+        } else if (menuType === 'VIDEO') {
             const videoBuffer = fs.readFileSync(videoPath);
             await sock.sendMessage(chatId, {
-                video: videoBuffer,
-                caption: helpMessage,
-                mentions: [senderId],
-                contextInfo: {
-                    forwardingScore: 1,
-                    isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363406588763460@newsletter',
-                        newsletterName: 'Gᴀᴀᴊᴜ-Xᴍᴅ',
-                        serverMessageId: -1
-                    }
-                }
+                video: videoBuffer, caption: styledMessage, mentions: [senderId],
+                contextInfo: { forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363406588763460@newsletter', newsletterName: 'Gᴀᴀᴊᴜ-Xᴍᴅ', serverMessageId: -1 } }
             }, { quoted: message });
-            console.log(`✅ Menu sent as VIDEO to @${senderId.split('@')[0]}`);
-        }
-        else {
-            // TEXT fallback
-            await sock.sendMessage(chatId, { 
-                text: helpMessage,
-                mentions: [senderId],
-                contextInfo: {
-                    forwardingScore: 1,
-                    isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363406588763460@newsletter',
-                        newsletterName: 'Gᴀᴀᴊᴜ-Xᴍᴅ',
-                        serverMessageId: -1
-                    }
-                }
+        } else {
+            await sock.sendMessage(chatId, {
+                text: styledMessage, mentions: [senderId],
+                contextInfo: { forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363406588763460@newsletter', newsletterName: 'Gᴀᴀᴊᴜ-Xᴍᴅ', serverMessageId: -1 } }
             });
         }
-        
-        // Wait a bit then send audio if available
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        await new Promise(r => setTimeout(r, 1000));
         await sendMenuAudio(sock, chatId, message);
-
-        console.log(`📊 Local Stats: ${stats.activeUsers} active, ${stats.totalUsers} total users (Platform: ${userPlatform})`);
-        console.log(`🎬 Menu Type shown: ${menuType}`);
-
     } catch (error) {
         console.error('Error in help command:', error);
-        await sock.sendMessage(chatId, { 
-            text: helpMessage,
-            mentions: [senderId],
-            contextInfo: {
-                forwardingScore: 1,
-                isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363406588763460@newsletter',
-                    newsletterName: 'Gᴀᴀᴊᴜ-Xᴍᴅ',
-                    serverMessageId: -1
-                }
-            }
-        });
+        await sock.sendMessage(chatId, { text: styledMessage, mentions: [senderId], contextInfo: { forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363406588763460@newsletter', newsletterName: 'Gᴀᴀᴊᴜ-Xᴍᴅ', serverMessageId: -1 } } });
     }
 }
 
