@@ -212,7 +212,7 @@ async function menuFontCommand(sock, chatId, message, args) {
         setFont(fontId);
 
         // Show preview
-        const preview = applyFont('WALLYJAYTECH-MD Menu Preview', fontId);
+        const preview = applyFont('GAAJU-XMD Menu Preview', fontId);
 
         await sock.sendMessage(chatId, {
             text: `✅ *FONT UPDATED*\n\n━━━━━━━━━━━━━━━━━━━━\n🎨 *New Font:* ${FONT_STYLES[fontId].name} (#${fontId})\n📝 *Style:* ${FONT_STYLES[fontId].description}\n\n━━━━━━━━━━━━━━━━━━━━\n📋 *Preview:*\n${preview}\n\n💡 Use .menu to see your menu in this font.`,
