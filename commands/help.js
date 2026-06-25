@@ -110,8 +110,8 @@ function buildMenu(styleId, data) {
 
     const infoLines = [
         `User  : @${userName}`,
-        `Bot   : ${settings.botName || 'GAAJU-XMD'}`,
-        `Owner : ${settings.botOwner || 'Chris Gaaju'}`,
+        `Bot   : ${settings.botName || 'WALLYJAYTECH-MD'}`,
+        `Owner : ${settings.botOwner || 'Wally Jay'}`,
         `Prefix: ${prefix}`,
         `Style : ${styleId}`,
         `Media : ${menuType}`,
@@ -126,39 +126,38 @@ function buildMenu(styleId, data) {
     ];
 
     const allCommands = [
-        ['🔒 OWNER', [`.mode`, `.menufont`, `.menustyle`, `.autorecord`, `.autotyping`, `.autorecordtype`, `.autostatus`, `.autoreact`, `.autoread`, `.antiforeign`, `.join`, `.poll`, `.vote`, `.block`, `.unblock`, `.getpp`, `.leave`, `.clearsession`, `.antidelete`, `.tempfile`, `.cleartmp`, `.checkupdate`, `.update`, `.botinfo`, `.setprefix`, `.setbotname`, `.setbotowner`, `.setownernumber`, `.setytchannel`, `.setpackname`, `.setauthor`, `.settimezone`, `.restart`, `.sudo`, `.settings`, `.setpp`, `.anticall`, `.pmblocker`, `.setmention`, `.mention`]],
-        ['👥 GROUP', [`.ban`, `.unban`, `.promote`, `.demote`, `.mute`, `.unmute`, `.delete`, `.kick`, `.ship`, `.stupid`, `.warnings`, `.warn`, `.antilink`, `.antibadword`, `.antibot`, `.groupinfo`, `.admins`, `.jid`, `.tag`, `.tagall`, `.tagnotadmin`, `.hidetag`, `.chatbot`, `.resetlink`, `.antitag`, `.welcome`, `.goodbye`, `.setgdesc`, `.setgname`, `.setgpp`]],
-        ['🎨 STICKER', [`.blur`, `.simage`, `.sticker`, `.removebg`, `.remini`, `.crop`, `.tgsticker`, `.meme`, `.take`, `.emojimix`, `.igs`, `.igsc`]],
-        ['📥 DOWNLOAD', [`.play`, `.song`, `.spotify`, `.instagram`, `.facebook`, `.tiktok`, `.video`, `.ytmp4`]],
-        ['🧠 AI', [`.gpt`, `.gemini`, `.imagine`, `.flux`, `.sora`]],
-        ['🎮 GAMES', [`.tictactoe`, `.hangman`, `.guess`, `.trivia`, `.answer`, `.truth`, `.dare`, `.coinflip`, `.coinstats`, `.coinleaderboard`, `.coindaily`, `.buychips`, `.coinhelp`]],
-        ['😁 FUN', [`.compliment`, `.insult`, `.flirt`, `.poet`, `.goodnight`, `.roseday`, `.character`, `.wasted`, `.simp`]],
-        ['🔤 EPHOTO', [`.metallic`, `.ice`, `.snow`, `.impressive`, `.matrix`, `.light`, `.neon`, `.devil`, `.purple`, `.thunder`, `.leaves`, `.1917`, `.arena`, `.hacker`, `.sand`, `.blackpink`, `.glitch`, `.fire`]],
-        ['🧩 MISC', [`.heart`, `.horny`, `.circle`, `.lgbt`, `.lolice`, `.tonikawa`, `.its-so-stupid`, `.namecard`, `.oogway`, `.oogway2`, `.tweet`, `.ytcomment`, `.comrade`, `.gay`, `.glass`, `.jail`, `.passed`, `.triggered`]],
-        ['🦹 ANIME', [`.nom`, `.poke`, `.cry`, `.kiss`, `.pat`, `.hug`, `.wink`, `.facepalm`]],
-        ['💻 GITHUB', [`.git`, `.github`, `.sc`, `.script`, `.repo`]],
-        ['🌐 GENERAL', [`.help`, `.menu`, `.ping`, `.alive`, `.tts`, `.owner`, `.joke`, `.quote`, `.fact`, `.weather`, `.news`, `.attp`, `.lyrics`, `.8ball`, `.vv`, `.trt`, `.ss`, `.url`, `.getjid`, `.clear`]]
+        ['🧠 AI', [`.flux`, `.gemini`, `.gpt`, `.imagine`, `.sora`]],
+        ['🦹 ANIME', [`.cry`, `.facepalm`, `.hug`, `.kiss`, `.nom`, `.pat`, `.poke`, `.wink`]],
+        ['📥 DOWNLOAD', [`.facebook`, `.instagram`, `.play`, `.song`, `.spotify`, `.tiktok`, `.video`, `.ytmp4`]],
+        ['🔤 EPHOTO', [`.1917`, `.arena`, `.blackpink`, `.devil`, `.fire`, `.glitch`, `.hacker`, `.ice`, `.impressive`, `.leaves`, `.light`, `.matrix`, `.metallic`, `.neon`, `.purple`, `.sand`, `.snow`, `.thunder`]],
+        ['😁 FUN', [`.character`, `.compliment`, `.flirt`, `.goodnight`, `.insult`, `.poet`, `.roseday`, `.simp`, `.wasted`]],
+        ['🎮 GAMES', [`.answer`, `.buychips`, `.coindaily`, `.coinflip`, `.coinhelp`, `.coinleaderboard`, `.coinstats`, `.dare`, `.guess`, `.hangman`, `.tictactoe`, `.trivia`, `.truth`]],
+        ['🌐 GENERAL', [`.8ball`, `.alive`, `.attp`, `.clear`, `.fact`, `.getjid`, `.help`, `.joke`, `.lyrics`, `.menu`, `.news`, `.owner`, `.ping`, `.quote`, `.ss`, `.trt`, `.tts`, `.url`, `.vv`, `.weather`]],
+        ['💻 GITHUB', [`.git`, `.github`, `.repo`, `.sc`, `.script`]],
+        ['👥 GROUP', [`.admins`, `.antibadword`, `.antibot`, `.antilink`, `.antitag`, `.ban`, `.chatbot`, `.delete`, `.demote`, `.goodbye`, `.groupinfo`, `.hidetag`, `.jid`, `.kick`, `.mute`, `.promote`, `.resetlink`, `.setgdesc`, `.setgname`, `.setgpp`, `.ship`, `.stupid`, `.tag`, `.tagall`, `.tagnotadmin`, `.unban`, `.unmute`, `.warn`, `.warnings`, `.welcome`]],
+        ['🧩 MISC', [`.circle`, `.comrade`, `.gay`, `.glass`, `.heart`, `.horny`, `.its-so-stupid`, `.jail`, `.lgbt`, `.lolice`, `.namecard`, `.oogway`, `.oogway2`, `.passed`, `.tonikawa`, `.triggered`, `.tweet`, `.ytcomment`]],
+        ['🔒 OWNER', [`.anticall`, `.antidelete`, `.antiforeign`, `.autoreact`, `.autoread`, `.autorecord`, `.autorecordtype`, `.autostatus`, `.autotyping`, `.block`, `.botinfo`, `.checkupdate`, `.clearsession`, `.cleartmp`, `.confighelp`, `.getpp`, `.join`, `.leave`, `.mention`, `.menufont`, `.menustyle`, `.mode`, `.pmblocker`, `.poll`, `.restart`, `.setauthor`, `.setbotname`, `.setbotowner`, `.setmention`, `.setownernumber`, `.setpackname`, `.setpp`, `.setprefix`, `.settings`, `.settimezone`, `.setytchannel`, `.sudo`, `.tempfile`, `.unblock`, `.update`, `.vote`]],
+        ['🎨 STICKER', [`.blur`, `.crop`, `.emojimix`, `.igsc`, `.igs`, `.meme`, `.removebg`, `.remini`, `.simage`, `.sticker`, `.take`, `.tgsticker`]]
     ];
 
     const styles = {
-        1: { top: '╔═══════════════════════════╗\n║  *GAAJU-XMD MENU*   ║\n╠═══════════════════════════╣', line: '║', secHdr: (s) => `╠═══════════════════════════╣\n║  *${s}*          ║\n║  ───────────────────────── ║`, bot: '╚═══════════════════════════╝', bul: '║  ' },
-        2: { top: '╭──❍「 *USER INFO* 」❍', line: '├•', secHdr: (s) => `╰─┬─★─☆─♪♪─❍\n╭─┴❍「 *${s}* 」❍`, bot: '╰─┬─★─☆─♪♪─❍', bul: '├• ' },
-        3: { top: '╭──✤「 *USER PANEL* 」✤', line: '├•', secHdr: (s) => `╰─✤─✤─✤─✤─✤─✤─✤─✤\n╭──✤「 *${s}* 」✤`, bot: '╰─✤─✤─✤─✤─✤─✤─✤─✤', bul: '├• ' },
-        4: { top: '╭──⍟「 *BOT STATUS* 」⍟', line: '⤚', secHdr: (s) => `╰─⍟─⍟─⍟─⍟─⍟─⍟─⍟─⍟\n╭──⍟「 *${s}* 」⍟`, bot: '╰─⍟─⍟─⍟─⍟─⍟─⍟─⍟─⍟', bul: '⤚ ' },
-        5: { top: '━━━❖━⦿━❖━⦿━❖━⦿━❖━⦿━━━\n╭──❖「 *USER INFO* 」❖', line: '⤚', secHdr: (s) => `╰─❖─❖─❖─❖─❖─❖─❖─❖\n╭──❖「 *${s}* 」❖`, bot: '╰─❖─❖─❖─❖─❖─❖─❖─❖', bul: '⤚ ' },
-        6: { top: '╭──⌬「 *MAIN MENU* 」⌬', line: '⤚', secHdr: (s) => `╰─⌬─⌬─⌬─⌬─⌬─⌬─⌬─⌬\n╭──⌬「 *${s}* 」⌬`, bot: '╰─⌬─⌬─⌬─⌬─⌬─⌬─⌬─⌬', bul: '⤚ ' },
-        7: { top: '╭──⏣「 *DASHBOARD* 」⏣', line: '⤷', secHdr: (s) => `╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣\n╭──⏣「 *${s}* 」⏣`, bot: '╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣', bul: '⤷ ' },
-        8: { top: '╭──⏣「 *STATUS* 」⏣', line: '▶', secHdr: (s) => `╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣\n╭──⏣「 *${s}* 」⏣`, bot: '╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣', bul: '▶ ' },
-        9: { top: '╭──⨁「 *SYSTEM* 」⨁', line: '⤷', secHdr: (s) => `╰─⨁─⨁─⨁─⨁─⨁─⨁─⨁─⨁\n╭──⨁「 *${s}* 」⨁`, bot: '╰─⨁─⨁─⨁─⨁─⨁─⨁─⨁─⨁', bul: '⤷ ' },
-        10: { top: '╭──⏣「 *MENU HEADER* 」⏣', line: '▸', secHdr: (s) => `╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣\n╭──⏣「 *${s}* 」⏣`, bot: '╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣', bul: '▸ ' },
-        11: { top: '╭──⏣「 *PROFILE* 」⏣', line: '▸', secHdr: (s) => `╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣\n╭──⏣「 *${s}* 」⏣`, bot: '╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣', bul: '▸ ' },
-        12: { top: '╭──⍋「 *BOT INFO* 」⍋', line: '▶', secHdr: (s) => `╰─⍋─⍋─⍋─⍋─⍋─⍋─⍋─⍋\n╭──⍋「 *${s}* 」⍋`, bot: '╰─⍋─⍋─⍋─⍋─⍋─⍋─⍋─⍋', bul: '▶ ' }
+        2: { top: '╭──❍「 USER INFO 」❍', line: '├•', secHdr: (s) => `╰─┬─★─☆─♪♪─❍\n╭─┴❍「 ${s} 」❍`, bot: '╰─┬─★─☆─♪♪─❍', bul: '├• ' },
+        3: { top: '╭──✤「 USER PANEL 」✤', line: '├•', secHdr: (s) => `╰─✤─✤─✤─✤─✤─✤─✤─✤\n╭──✤「 ${s} 」✤`, bot: '╰─✤─✤─✤─✤─✤─✤─✤─✤', bul: '├• ' },
+        4: { top: '╭──⍟「 BOT STATUS 」⍟', line: '⤚', secHdr: (s) => `╰─⍟─⍟─⍟─⍟─⍟─⍟─⍟─⍟\n╭──⍟「 ${s} 」⍟`, bot: '╰─⍟─⍟─⍟─⍟─⍟─⍟─⍟─⍟', bul: '⤚ ' },
+        5: { top: '━━━❖━⦿━❖━⦿━❖━⦿━❖━⦿━━━\n╭──❖「 USER INFO 」❖', line: '⤚', secHdr: (s) => `╰─❖─❖─❖─❖─❖─❖─❖─❖\n╭──❖「 ${s} 」❖`, bot: '╰─❖─❖─❖─❖─❖─❖─❖─❖', bul: '⤚ ' },
+        6: { top: '╭──⌬「 MAIN MENU 」⌬', line: '⤚', secHdr: (s) => `╰─⌬─⌬─⌬─⌬─⌬─⌬─⌬─⌬\n╭──⌬「 ${s} 」⌬`, bot: '╰─⌬─⌬─⌬─⌬─⌬─⌬─⌬─⌬', bul: '⤚ ' },
+        7: { top: '╭──⏣「 DASHBOARD 」⏣', line: '⤷', secHdr: (s) => `╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣\n╭──⏣「 ${s} 」⏣`, bot: '╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣', bul: '⤷ ' },
+        8: { top: '╭──⏣「 STATUS 」⏣', line: '▶', secHdr: (s) => `╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣\n╭──⏣「 ${s} 」⏣`, bot: '╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣', bul: '▶ ' },
+        9: { top: '╭──⨁「 SYSTEM 」⨁', line: '⤷', secHdr: (s) => `╰─⨁─⨁─⨁─⨁─⨁─⨁─⨁─⨁\n╭──⨁「 ${s} 」⨁`, bot: '╰─⨁─⨁─⨁─⨁─⨁─⨁─⨁─⨁', bul: '⤷ ' },
+        10: { top: '╭──⏣「 MENU HEADER 」⏣', line: '▸', secHdr: (s) => `╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣\n╭──⏣「 ${s} 」⏣`, bot: '╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣', bul: '▸ ' },
+        11: { top: '╭──⏣「 PROFILE 」⏣', line: '▸', secHdr: (s) => `╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣\n╭──⏣「 ${s} 」⏣`, bot: '╰─⏣─⏣─⏣─⏣─⏣─⏣─⏣─⏣', bul: '▸ ' },
+        12: { top: '╭──⍋「 BOT INFO 」⍋', line: '▶', secHdr: (s) => `╰─⍋─⍋─⍋─⍋─⍋─⍋─⍋─⍋\n╭──⍋「 ${s} 」⍋`, bot: '╰─⍋─⍋─⍋─⍋─⍋─⍋─⍋─⍋', bul: '▶ ' }
     };
 
-    const s = styles[styleId] || styles[1];
+    const s = styles[styleId] || styles[2];
 
-    let menu = `👋 *Hello @${userName}! ${greeting.message}*\n\n`;
-    menu += `*${greeting.greeting}! Here's your menu:*\n\n`;
+    let menu = `👋 Hello @${userName}! ${greeting.message}\n\n`;
+    menu += `${greeting.greeting}! Here's your menu:\n\n`;
     menu += s.top + '\n';
     for (const l of infoLines) menu += s.line + ' ' + l + '\n';
     
@@ -167,11 +166,11 @@ function buildMenu(styleId, data) {
         for (const cmd of cmds) menu += s.bul + cmd + '\n';
     }
     menu += s.bot + '\n\n';
-    menu += `    🟡 *Copyright Chris Gaaju 2026* 🟡\n\n`;
-    menu += `*📊 Total Commands: ${totalCommands}*\n\n`;
-    menu += `*📊 Local Stats: ${stats.activeUsers} active now, ${stats.totalUsers} total users*\n\n`;
-    menu += `*${greeting.emoji} ${greeting.greeting}, @${userName}! ${greeting.message}*\n\n`;
-    menu += `*⬇️Join our channel below for updates⬇️*`;
+    menu += `    🟡 Copyright wallyjaytech 2025 🟡\n\n`;
+    menu += `📊 Total Commands: ${totalCommands}\n\n`;
+    menu += `📊 Local Stats: ${stats.activeUsers} active now, ${stats.totalUsers} total users\n\n`;
+    menu += `${greeting.emoji} ${greeting.greeting}, @${userName}! ${greeting.message}\n\n`;
+    menu += `⬇️Join our channel below for updates⬇️`;
 
     return menu;
 }
@@ -202,8 +201,324 @@ async function helpCommand(sock, chatId, message) {
         catch (e) { return new Date().toLocaleString(); }
     };
 
-    const menuData = { userName, greeting, prefix, totalCommands, stats, dayInfo, currentBotMode, menuType, userPlatform, getLocalizedTime, styleId };
-    const helpMessage = buildMenu(styleId, menuData);
+    let platformStatsText = '';
+    const platforms = stats.platforms || {};
+    const platformEntries = Object.entries(platforms).sort((a, b) => b[1] - a[1]);
+    platformStatsText = platformEntries.length > 0 ? platformEntries.map(([p, c]) => `║     ${getPlatformEmoji(p)} ${p}: ${c} users`).join('\n') : '║     📊 No platform data yet';
+
+    const userUsageInfo = stats.users?.[`user_${senderId.split('@')[0]}`] ? `║     📈 Your Usage: ${stats.users[`user_${senderId.split('@')[0]}`].totalUses || 1} commands` : '║     📈 Your Usage: First time user';
+
+    let helpMessage;
+    
+    if (styleId === 1) {
+        helpMessage = `
+👋 Hello @${userName}! ${greeting.message}
+
+${greeting.greeting}! Here's your menu:
+
+╔❖🔹 GAAJU-XMD MENU 🔹❖
+║
+║   👤 User: [ @${userName} ]
+║   🤖 BotName: [ ${settings.botName || 'GAAJU-XMD'} ]
+║   🧠 Version: [ ${stats.version || settings.version || '1.0.0'} ]
+║   👑 BotOwner: [ ${settings.botOwner || 'Xchristech'} ]
+║   📺 YT Channel: [ ${global.ytch} ]
+║   📞 OwnerNumber: [ ${settings.ownerNumber} ]
+║   📥 Prefix: [ ${prefix} ]
+║   🎨 Menu Style: [ ${styleId} ]
+║   🎬 Menu Media: [ ${menuType} & AUDIO ]
+║   🌍 TimeZone: [ ${settings.timezone} ]
+║   ⏰ Current Time: [ ${greeting.time} ]
+║   ${dayInfo.emoji} Day: [ ${dayInfo.day} ]
+║   💻 Bot Mode: [ ${currentBotMode} ]
+║   📊 Total Commands: [ ${totalCommands} ]
+║   📅 Date: [ ${getLocalizedTime()} ]
+║   📡 Your Platform: [ ${userPlatform} ]
+║   👥 Active Users Now: [ ${stats.activeUsers} ]
+║   📊 Total Users All Time: [ ${stats.totalUsers} ]
+${userUsageInfo}
+║   🌐 Users by Platform:
+${platformStatsText}
+║   📡 Tracking: Local Storage ✅
+║
+╚═══════════════════╝
+
+   ⬇️ ALL COMMANDS ⬇️
+
+╭────────────────────────╮
+│      👑 OWNER MENU
+├────────────────────────┤
+│ ⟢ ${prefix}anticall
+│ ⟢ ${prefix}antidelete
+│ ⟢ ${prefix}antiforeign
+│ ⟢ ${prefix}autoreact
+│ ⟢ ${prefix}autoread
+│ ⟢ ${prefix}autorecord
+│ ⟢ ${prefix}autorecordtype
+│ ⟢ ${prefix}autostatus
+│ ⟢ ${prefix}autostatuslike
+│ ⟢ ${prefix}autotyping
+│ ⟢ ${prefix}block
+│ ⟢ ${prefix}botinfo
+│ ⟢ ${prefix}checkupdate
+│ ⟢ ${prefix}clearsession
+│ ⟢ ${prefix}cleartmp
+│ ⟢ ${prefix}confighelp
+│ ⟢ ${prefix}getpp
+│ ⟢ ${prefix}join
+│ ⟢ ${prefix}leave
+│ ⟢ ${prefix}mention
+│ ⟢ ${prefix}menufont
+│ ⟢ ${prefix}menustyle
+│ ⟢ ${prefix}mode
+│ ⟢ ${prefix}pmblocker
+│ ⟢ ${prefix}poll
+│ ⟢ ${prefix}restart
+│ ⟢ ${prefix}setauthor
+│ ⟢ ${prefix}setbotname
+│ ⟢ ${prefix}setbotowner
+│ ⟢ ${prefix}setmention
+│ ⟢ ${prefix}setownernumber
+│ ⟢ ${prefix}setpackname
+│ ⟢ ${prefix}setpp
+│ ⟢ ${prefix}setprefix
+│ ⟢ ${prefix}settings
+│ ⟢ ${prefix}settimezone
+│ ⟢ ${prefix}setytchannel
+│ ⟢ ${prefix}sudo
+│ ⟢ ${prefix}tempfile
+│ ⟢ ${prefix}unblock
+│ ⟢ ${prefix}update
+│ ⟢ ${prefix}updateinfo
+│ ⟢ ${prefix}vote
+╰────────────────────────╯
+
+╭────────────────────────╮
+│     👥 GROUP CMDS 👥
+├────────────────────────┤
+│ ⟢ ${prefix}admins
+│ ⟢ ${prefix}antibadword
+│ ⟢ ${prefix}antibot
+│ ⟢ ${prefix}antilink
+│ ⟢ ${prefix}antitag
+│ ⟢ ${prefix}ban
+│ ⟢ ${prefix}chatbot
+│ ⟢ ${prefix}delete
+│ ⟢ ${prefix}demote
+│ ⟢ ${prefix}goodbye
+│ ⟢ ${prefix}groupinfo
+│ ⟢ ${prefix}hidetag
+│ ⟢ ${prefix}jid
+│ ⟢ ${prefix}kick
+│ ⟢ ${prefix}mute
+│ ⟢ ${prefix}promote
+│ ⟢ ${prefix}resetlink
+│ ⟢ ${prefix}setgdesc
+│ ⟢ ${prefix}setgname
+│ ⟢ ${prefix}setgpp
+│ ⟢ ${prefix}ship
+│ ⟢ ${prefix}stupid
+│ ⟢ ${prefix}tag
+│ ⟢ ${prefix}tagall
+│ ⟢ ${prefix}tagnotadmin
+│ ⟢ ${prefix}unban
+│ ⟢ ${prefix}unmute
+│ ⟢ ${prefix}warn
+│ ⟢ ${prefix}warnings
+│ ⟢ ${prefix}welcome
+╰────────────────────────╯
+
+╭────────────────────────╮
+│    🎨 STICKER CMDS 🎨
+├────────────────────────┤
+│ ⟢ ${prefix}blur
+│ ⟢ ${prefix}crop
+│ ⟢ ${prefix}emojimix
+│ ⟢ ${prefix}igsc
+│ ⟢ ${prefix}igs
+│ ⟢ ${prefix}meme
+│ ⟢ ${prefix}removebg
+│ ⟢ ${prefix}remini
+│ ⟢ ${prefix}simage
+│ ⟢ ${prefix}sticker
+│ ⟢ ${prefix}take
+│ ⟢ ${prefix}tgsticker
+╰────────────────────────╯
+
+╭────────────────────────╮
+│   📩 WHATSAPP CMDS 📩
+├────────────────────────┤
+│ ⟢ ${prefix}clear
+╰────────────────────────╯
+
+╭────────────────────────╮
+│      🖼️ PIES CMDS 🖼️
+├────────────────────────┤
+│ ⟢ ${prefix}china
+│ ⟢ ${prefix}hijab
+│ ⟢ ${prefix}indonesia
+│ ⟢ ${prefix}japan
+│ ⟢ ${prefix}korea
+│ ⟢ ${prefix}pies
+╰────────────────────────╯
+
+╭────────────────────────╮
+│      🎮 GAME CMDS 🎮
+├────────────────────────┤
+│ ⟢ ${prefix}answer
+│ ⟢ ${prefix}buychips
+│ ⟢ ${prefix}coindaily
+│ ⟢ ${prefix}coinflip
+│ ⟢ ${prefix}coinhelp
+│ ⟢ ${prefix}coinleaderboard
+│ ⟢ ${prefix}coinstats
+│ ⟢ ${prefix}dare
+│ ⟢ ${prefix}guess
+│ ⟢ ${prefix}hangman
+│ ⟢ ${prefix}tictactoe
+│ ⟢ ${prefix}trivia
+│ ⟢ ${prefix}truth
+╰────────────────────────╯
+
+╭────────────────────────╮
+│        🧠 AI CMDS 🧠
+├────────────────────────┤
+│ ⟢ ${prefix}flux
+│ ⟢ ${prefix}gemini
+│ ⟢ ${prefix}gpt
+│ ⟢ ${prefix}imagine
+│ ⟢ ${prefix}sora
+╰────────────────────────╯
+
+╭────────────────────────╮
+│       😁 FUN CMDS 😁
+├────────────────────────┤
+│ ⟢ ${prefix}character
+│ ⟢ ${prefix}compliment
+│ ⟢ ${prefix}flirt
+│ ⟢ ${prefix}goodnight
+│ ⟢ ${prefix}insult
+│ ⟢ ${prefix}poet
+│ ⟢ ${prefix}roseday
+│ ⟢ ${prefix}simp
+│ ⟢ ${prefix}wasted
+╰────────────────────────╯
+
+╭────────────────────────╮
+│     🔤 EPHOTO CMDS 🔤
+├────────────────────────┤
+│ ⟢ ${prefix}1917
+│ ⟢ ${prefix}arena
+│ ⟢ ${prefix}blackpink
+│ ⟢ ${prefix}devil
+│ ⟢ ${prefix}fire
+│ ⟢ ${prefix}glitch
+│ ⟢ ${prefix}hacker
+│ ⟢ ${prefix}ice
+│ ⟢ ${prefix}impressive
+│ ⟢ ${prefix}leaves
+│ ⟢ ${prefix}light
+│ ⟢ ${prefix}matrix
+│ ⟢ ${prefix}metallic
+│ ⟢ ${prefix}neon
+│ ⟢ ${prefix}purple
+│ ⟢ ${prefix}sand
+│ ⟢ ${prefix}snow
+│ ⟢ ${prefix}thunder
+╰────────────────────────╯
+
+╭────────────────────────╮
+│   📥 DOWNLOAD CMDS 📥
+├────────────────────────┤
+│ ⟢ ${prefix}facebook
+│ ⟢ ${prefix}instagram
+│ ⟢ ${prefix}play
+│ ⟢ ${prefix}song
+│ ⟢ ${prefix}spotify
+│ ⟢ ${prefix}tiktok
+│ ⟢ ${prefix}video
+│ ⟢ ${prefix}ytmp4
+╰────────────────────────╯
+
+╭────────────────────────╮
+│      🧩 MISC CMDS 🧩
+├────────────────────────┤
+│ ⟢ ${prefix}circle
+│ ⟢ ${prefix}comrade
+│ ⟢ ${prefix}gay
+│ ⟢ ${prefix}glass
+│ ⟢ ${prefix}heart
+│ ⟢ ${prefix}horny
+│ ⟢ ${prefix}its-so-stupid
+│ ⟢ ${prefix}jail
+│ ⟢ ${prefix}lgbt
+│ ⟢ ${prefix}lolice
+│ ⟢ ${prefix}namecard
+│ ⟢ ${prefix}oogway
+│ ⟢ ${prefix}oogway2
+│ ⟢ ${prefix}passed
+│ ⟢ ${prefix}tonikawa
+│ ⟢ ${prefix}triggered
+│ ⟢ ${prefix}tweet
+│ ⟢ ${prefix}ytcomment
+╰────────────────────────╯
+
+╭────────────────────────╮
+│    🦹‍♀️ ANIME CMDS 🦹‍♀️
+├────────────────────────┤
+│ ⟢ ${prefix}cry
+│ ⟢ ${prefix}facepalm
+│ ⟢ ${prefix}hug
+│ ⟢ ${prefix}kiss
+│ ⟢ ${prefix}nom
+│ ⟢ ${prefix}pat
+│ ⟢ ${prefix}poke
+│ ⟢ ${prefix}wink
+╰────────────────────────╯
+
+╭────────────────────────╮
+│     💻 GITHUB CMDS 💻
+├────────────────────────┤
+│ ⟢ ${prefix}repo
+╰────────────────────────╯
+
+╭────────────────────────╮
+│    🌐 GENERAL CMDS 🌐
+├────────────────────────┤
+│ ⟢ ${prefix}8ball
+│ ⟢ ${prefix}alive
+│ ⟢ ${prefix}attp
+│ ⟢ ${prefix}fact
+│ ⟢ ${prefix}getjid
+│ ⟢ ${prefix}menu
+│ ⟢ ${prefix}joke
+│ ⟢ ${prefix}lyrics
+│ ⟢ ${prefix}news
+│ ⟢ ${prefix}owner
+│ ⟢ ${prefix}ping
+│ ⟢ ${prefix}quote
+│ ⟢ ${prefix}screenshot
+│ ⟢ ${prefix}translate
+│ ⟢ ${prefix}tts
+│ ⟢ ${prefix}url
+│ ⟢ ${prefix}vv
+│ ⟢ ${prefix}weather
+╰────────────────────────╯
+
+    🎯 ╰‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄʜʀɪs ɢᴀᴀᴊᴜ 🎯
+
+📊 Total Commands: ${totalCommands}
+
+📊 Local Stats: ${stats.activeUsers} active now, ${stats.totalUsers} total users
+
+${greeting.emoji} ${greeting.greeting}, @${userName}! ${greeting.message}
+
+⬇️Join our channel below for updates⬇️`;
+    } else {
+        const menuData = { userName, greeting, prefix, totalCommands, stats, dayInfo, currentBotMode, menuType, userPlatform, getLocalizedTime, styleId };
+        helpMessage = buildMenu(styleId, menuData);
+    }
+
     const finalMessage = applyFont(helpMessage, fontId);
 
     try {
