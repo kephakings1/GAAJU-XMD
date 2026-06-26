@@ -19,8 +19,8 @@
 //* 
 //  * project_name : GAAJU-XMD
 //  * author : gaajutech
-//  * youtube : https://www.youtube.com/Xchristech
-//  * description : GAAJU-XMD ,A Multi-Device whatsapp user bot.
+//  * youtube : https://www.youtube.com/Xchristech 
+//  * description : GAAJU-MD ,A Multi-Device whatsapp user bot.
 //*
 //*
 //re-upload? recode? copy code? give credit to gaajutech 2026:)
@@ -29,17 +29,44 @@
 //GitHub: Xchristech2
 //WhatsApp: +2348069675806
 //want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@Xchristech
-//   * Created By Github: gaajutech.
+//   * Created By Github: gaajutechh.
 //   * Credit To Chris Gaaju 
 //   * © 2026 GAAJU-XMD.
 // ⛥┌┤
 // */
+
+// ✅ LOCK FILE — Prevent multiple instances
+const fs = require('fs');
+const path = require('path');
+
+const LOCK_FILE = './bot.lock';
+if (fs.existsSync(LOCK_FILE)) {
+    try {
+        const pid = parseInt(fs.readFileSync(LOCK_FILE, 'utf8').trim());
+        process.kill(pid, 0);
+        console.log(`❌ Another instance is running (PID: ${pid}). Exiting...`);
+        process.exit(1);
+    } catch (e) {
+        console.log('⚠️ Stale lock file found, removing...');
+        fs.unlinkSync(LOCK_FILE);
+    }
+}
+fs.writeFileSync(LOCK_FILE, String(process.pid));
+
+const cleanLock = () => {
+    try { fs.unlinkSync(LOCK_FILE); } catch (e) {}
+};
+process.on('exit', cleanLock);
+process.on('SIGINT', cleanLock);
+process.on('SIGTERM', cleanLock);
+// ✅ END LOCK FILE
+
+//════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════//
+
 global.File = class File {};
 require('./settings');
 const { Boom } = require('@hapi/boom');
-const fs = require('fs');
 const chalk = require('chalk');
-const path = require('path');
 const { handleMessages, handleGroupParticipantUpdate } = require('./main');
 
 try { const autorecord = require('./commands/autorecord'); autorecord.stopAllInfiniteRecordings(); } catch (e) {}
@@ -74,9 +101,16 @@ setInterval(() => {
 function readStatusConfig() {
     try {
         const p = path.join(__dirname, 'data', 'autostatus.json');
-        if (fs.existsSync(p)) { const c = JSON.parse(fs.readFileSync(p, 'utf8')); return { enabled: c.enabled === true, reactOn: c.reactOn === true }; }
+        if (fs.existsSync(p)) { 
+            const c = JSON.parse(fs.readFileSync(p, 'utf8')); 
+            return { 
+                enabled: c.enabled === true, 
+                likeOn: c.likeOn === true,
+                selfOn: c.selfOn === true
+            }; 
+        }
     } catch (e) {}
-    return { enabled: false, reactOn: false };
+    return { enabled: false, likeOn: false, selfOn: false };
 }
 
 function getBotMode() {
@@ -98,7 +132,7 @@ setInterval(() => {
     }
     if (memMB > 700) {
         console.log('🔴 Critical memory - restarting');
-        process.exit(1); // PM2 or panel will restart it
+        process.exit(1);
     }
 }, 5 * 60 * 1000);
 
@@ -150,7 +184,14 @@ async function startXeonBotInc() {
                 mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message;
 
                 if (mek.key && mek.key.remoteJid === 'status@broadcast') {
-                    if (mek.key.fromMe) return;
+                    if (mek.key.fromMe) {
+                        // Only process own status if selfOn is enabled
+                        const statusConfig = readStatusConfig();
+                        if (statusConfig.enabled && statusConfig.selfOn) {
+                            handleStatusUpdate(XeonBotInc, chatUpdate).catch(err => console.error("Status view error:", err.message));
+                        }
+                        return;
+                    }
                     storeMessage(XeonBotInc, mek);
                     const statusConfig = readStatusConfig();
                     if (statusConfig.enabled === true) {
@@ -183,7 +224,7 @@ async function startXeonBotInc() {
 
         if (pairingCode && !XeonBotInc.authState.creds.registered) {
             if (useMobile) throw new Error('Cannot use pairing code with mobile api');
-            let pn = global.phoneNumber || await question(chalk.bgBlack(chalk.greenBright(`WhatsApp number (2348038915922): `)));
+            let pn = global.phoneNumber || await question(chalk.bgBlack(chalk.greenBright(`WhatsApp number (2348155763709): `)));
             pn = pn.replace(/[^0-9]/g, '');
             if (!require('awesome-phonenumber')('+' + pn).isValid()) { console.log(chalk.red('Invalid number.')); process.exit(1); }
             setTimeout(async () => { try { let code = await XeonBotInc.requestPairingCode(pn); code = code?.match(/.{1,4}/g)?.join("-") || code; console.log(chalk.black(chalk.bgGreen(`Code: `)), chalk.black(chalk.white(code))); } catch (e) { console.error('Error:', e); } }, 3000);
@@ -213,7 +254,7 @@ async function startXeonBotInc() {
                 try {
                     const botNumber = XeonBotInc.user.id.split(':')[0] + '@s.whatsapp.net';
                     const time = new Date().toLocaleString('en-US', { timeZone: settings.timezone || 'Africa/Lagos', hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit', day: '2-digit', month: '2-digit', year: 'numeric' });
-                    const activationMessage = `╭──❍「 *BOT ACTIVATED* 」❍\n├• 📅 ${time}\n├• ✅ Status: ONLINE & READY\n├• 💻 Version: ${settings.version}\n├• 👤 Owner: ${settings.botOwner}\n├• 📞 Contact: ${settings.ownerNumber}\n├• 🌐 Prefix: ${settings.prefix}\n├• 💻 Mode: ${getBotMode()}\n├• 💡 ${getCommandCount()}+ Commands\n╰─┬─★─☆─♪♪─❍\n╭─┴❍「 *QUICK START* 」❍\n◈ • .menu - All commands\n◈ • .help - Bot guide\n◈ • .owner - Contact owner\n◈ • .settings - Settings\n◈ • .ping - Check speed\n◈ • .update - Update bot\n╰─┬─★─☆─♪♪─❍\n╭─┴❍「 *CONNECT* 」❍\n◈ • 💬 Support Group\n◈ • 📺 YouTube Channel\n◈ • ⭐ GitHub Repo\n◈ • 🔔 Channel Updates\n╰───★─☆─♪♪─❍\n\n*🔗 Channel:* ${global.channelLink}\n*💬 Support:* https://chat.whatsapp.com/HgGLuDF6ZNABneNTbdrtUQ?mode=hqrt1\n*📺 YouTube:* https://youtube.com/@Xchristech\n*💻 GitHub:* https://github.com/Xchristech2\n\n🤖 GAAJU-XMD - Professional WhatsApp Bot`;
+                    const activationMessage = `╭──❍「 *BOT ACTIVATED* 」❍\n├• 📅 ${time}\n├• ✅ Status: ONLINE & READY\n├• 💻 Version: ${settings.version}\n├• 👤 Owner: ${settings.botOwner}\n├• 📞 Contact: ${settings.ownerNumber}\n├• 🌐 Prefix: ${settings.prefix}\n├• 💻 Mode: ${getBotMode()}\n├• 💡 ${getCommandCount()}+ Commands\n╰─┬─★─☆─♪♪─❍\n╭─┴❍「 *QUICK START* 」❍\n◈ • .menu - All commands\n◈ • .help - Bot guide\n◈ • .owner - Contact owner\n◈ • .settings - Settings\n◈ • .ping - Check speed\n◈ • .update - Update bot\n╰─┬─★─☆─♪♪─❍\n╭─┴❍「 *CONNECT* 」❍\n◈ • 💬 Support Group\n◈ • 📺 YouTube Channel\n◈ • ⭐ GitHub Repo\n◈ • 🔔 Channel Updates\n╰───★─☆─♪♪─❍\n\n*🔗 Channel:* ${global.channelLink}\n*💬 Support:* https://chat.whatsapp.com/HggBPlh2UEMEHaGwOcaVkE?mode=hqrt1\n*📺 YouTube:* https://youtube.com/@Xchristech\n*💻 GitHub:* https://github.com/Xchristech2\n\n🤖 GAAJU-XMD - Professional WhatsApp Bot`;
                     await XeonBotInc.sendMessage(botNumber, { text: activationMessage, contextInfo: { forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363406588763460@newsletter', newsletterName: 'Gᴀᴀᴊᴜ-Xᴍᴅ', serverMessageId: -1 } } });
                 } catch (e) { console.error('Error sending activation:', e.message); }
                 await delay(1999);
