@@ -1,6 +1,6 @@
 //════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════//
 //                                                                                                                                                                                        //
-//                                                             GAAJU-XMD 𝐁𝐎𝐓                                                                                                     //
+//                                                             GAAJU-X𝐌𝐃 𝐁𝐎𝐓                                                                                                     //
 //                                                                                                                                                                                        //
 //                                                                  𝐕 : 1.0.0                                                                                                             //
 //                                                                                                                                                                                        //
@@ -17,9 +17,9 @@
 //                                                                                                                                                                                        //
 //════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════//
 //* 
-//  * project_name : GAAJU-MXD
+//  * project_name : GAAJU-XMD
 //  * author : gaajutech
-//  * youtube : https://www.youtube.com/Xchristech
+//  * youtube : https://www.youtube.com/Xchristech 
 //  * description : GAAJU-XMD ,A Multi-Device whatsapp user bot.
 //*
 //*
@@ -29,8 +29,8 @@
 //GitHub: Xchristech2 
 //WhatsApp: +2348069675806
 //want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@Xchristech
-//   * Created By Github: Xchristech2.
-//   * Credit To Chris Gaaju 
+//   * Created By Github: gaajutech.
+//   * Credit To Chris Gaaju
 //   * © 2026 GAAJU-XMD.
 // ⛥┌┤
 // */
@@ -253,7 +253,7 @@ const { menuFontCommand } = require('./commands/menufont');
 global.packname = settings.packname;
 global.author = settings.author;
 global.channelLink = "https://whatsapp.com/channel/0029VbBvGgyFsn0alyIDjw0z";
-global.ytch = settings.ytChannel || "Xchristech";
+global.ytch = settings.ytChannel || "Gᴀᴀᴊᴜ-Xᴍᴅ";
 
 // ADD PLATFORM DETECTION HERE
 function getDeploymentPlatform() {
@@ -1467,10 +1467,17 @@ case userMessage.startsWith('.autorecord'):
                 await clearSessionCommand(sock, chatId, message);
                 break;
           
-            case userMessage.startsWith('.autostatus'):
-                const autoStatusArgs = userMessage.split(' ').slice(1);
-                await autoStatusCommand(sock, chatId, message, autoStatusArgs);
-                break;
+            // ✅ New case for .autostatuslike
+case userMessage.startsWith('.autostatuslike'):
+    const likeArgs = ['autostatuslike', ...userMessage.split(' ').slice(1)];
+    await autoStatusCommand(sock, chatId, message, likeArgs);
+    break;
+
+// ✅ Existing .autostatus case (keep as is)
+case userMessage.startsWith('.autostatus'):
+    const autoStatusArgs = userMessage.split(' ').slice(1);
+    await autoStatusCommand(sock, chatId, message, autoStatusArgs);
+    break;
             case userMessage.startsWith('.simp'):
                 await simpCommand(sock, chatId, message);
                 break;
