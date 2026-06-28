@@ -1,72 +1,45 @@
 //════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════//
-//                                                                                                                                                            //
-//                                                             GAAJU-X𝐌𝐃 𝐁𝐎𝐓                                                                         //
-//                                                                                                                                                            //
-//                                                                  𝐕 : 1.0.0                                                                                 //
-//                                                                                                                                                            //
-//                                                                                                                                                            //
-//                ██╗    ██╗ █████╗ ██╗     ██╗  ██╗   ██╗   ██╗ █████╗ ██╗   ██╗████████╗███████╗ ██████╗██╗  ██╗      ███╗   ███╗██████╗                    //
-//                ██║    ██║██╔══██╗██║     ██║  ╚██╗ ██╔╝   ██║██╔══██╗╚██╗ ██╔╝╚══██╔══╝██╔════╝██╔════╝██║  ██║      ████╗ ████║██╔══██╗                   //
-//                ██║ █╗ ██║███████║██║     ██║   ╚████╔╝    ██║███████║ ╚████╔╝    ██║   █████╗  ██║     ███████║█████╗██╔████╔██║██║  ██║                   //
-//                ██║███╗██║██╔══██║██║     ██║    ╚██╔╝██   ██║██╔══██║  ╚██╔╝     ██║   ██╔══╝  ██║     ██╔══██║╚════╝██║╚██╔╝██║██║  ██║                   //
-//                ╚███╔███╔╝██║  ██║███████╗███████╗██║ ╚█████╔╝██║  ██║   ██║      ██║   ███████╗╚██████╗██║  ██║      ██║ ╚═╝ ██║██████╔╝                   //
-//                 ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝      ╚═╝     ╚═╝╚═════╝                    //
-//                                                                                                                                                            //
-//                                                                 𝐂𝐎𝐏𝐘𝐑𝐈𝐆𝐇𝐓 2026                                                                            //
-//                                                                                                                                                            //
-//                                                                                                                                                            //
+//                                                                                                                                                                                        //
+//                                                             GAAJU-X𝐌𝐃 𝐁𝐎𝐓                                                                                                     //
+//                                                                                                                                                                                        //
+//                                                                  𝐕 : 1.0.0                                                                                                             //
+//                                                                                                                                                                                        //
+//                                                                                                                                                                                        //
+//                ██╗    ██╗ █████╗ ██╗     ██╗  ██╗   ██╗   ██╗ █████╗ ██╗   ██╗████████╗███████╗ ██████╗██╗  ██╗      ███╗   ███╗██████╗                                 //
+//                ██║    ██║██╔══██╗██║     ██║  ╚██╗ ██╔╝   ██║██╔══██╗╚██╗ ██╔╝╚══██╔══╝██╔════╝██╔════╝██║  ██║      ████╗ ████║██╔══██╗                              //
+//                ██║ █╗ ██║███████║██║     ██║   ╚████╔╝    ██║███████║ ╚████╔╝    ██║   █████╗  ██║     ███████║█████╗██╔████╔██║██║  ██║                               //
+//                ██║███╗██║██╔══██║██║     ██║    ╚██╔╝██   ██║██╔══██║  ╚██╔╝     ██║   ██╔══╝  ██║     ██╔══██║╚════╝██║╚██╔╝██║██║  ██║                               //
+//                ╚███╔███╔╝██║  ██║███████╗███████╗██║ ╚█████╔╝██║  ██║   ██║      ██║   ███████╗╚██████╗██║  ██║      ██║ ╚═╝ ██║██████╔╝                              //
+//                 ╚══╝╚══╝ ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝      ╚═╝     ╚═╝╚═════╝                                 //
+//                                                                                                                                                                                        //
+//                                                                 𝐂𝐎𝐏𝐘𝐑𝐈𝐆𝐇𝐓 2026                                                                                                        //
+//                                                                                                                                                                                        //
+//                                                                                                                                                                                        //
 //════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════//
 //* 
 //  * project_name : GAAJU-XMD
 //  * author : gaajutech
-//  * youtube : https://www.youtube.com/Xchristech 
+//  * youtube : https://www.youtube.com/Xchristech
 //  * description : GAAJU-XMD ,A Multi-Device whatsapp user bot.
 //*
 //*
 //re-upload? recode? copy code? give credit to gaajutech 2026:)
 //Instagram: gaajutech
 //Telegram: t.me/Official_ChrisGaaju
-//GitHub: Xchristech2 
+//GitHub: Xchristech2
 //WhatsApp: +2348069675806
 //want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@Xchristech
-//   * Created By Github: Chris Gaaju.
-//   * Credit To Chris Gaaju
+//   * Created By Github: gaajutech.
+//   * Credit To Chris Gaaju 
 //   * © 2026 GAAJU-XMD.
 // ⛥┌┤
 // */
-
-// ✅ LOCK FILE — Prevent multiple instances
-const fs = require('fs');
-const path = require('path');
-
-const LOCK_FILE = './bot.lock';
-if (fs.existsSync(LOCK_FILE)) {
-    try {
-        const pid = parseInt(fs.readFileSync(LOCK_FILE, 'utf8').trim());
-        process.kill(pid, 0);
-        console.log(`❌ Another instance is running (PID: ${pid}). Exiting...`);
-        process.exit(1);
-    } catch (e) {
-        console.log('⚠️ Stale lock file found, removing...');
-        fs.unlinkSync(LOCK_FILE);
-    }
-}
-fs.writeFileSync(LOCK_FILE, String(process.pid));
-
-const cleanLock = () => {
-    try { fs.unlinkSync(LOCK_FILE); } catch (e) {}
-};
-process.on('exit', cleanLock);
-process.on('SIGINT', cleanLock);
-process.on('SIGTERM', cleanLock);
-// ✅ END LOCK FILE
-
-//════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════//
-
 global.File = class File {};
 require('./settings');
 const { Boom } = require('@hapi/boom');
+const fs = require('fs');
 const chalk = require('chalk');
+const path = require('path');
 const { handleMessages, handleGroupParticipantUpdate } = require('./main');
 
 try { const autorecord = require('./commands/autorecord'); autorecord.stopAllInfiniteRecordings(); } catch (e) {}
@@ -101,24 +74,17 @@ setInterval(() => {
 function readStatusConfig() {
     try {
         const p = path.join(__dirname, 'data', 'autostatus.json');
-        if (fs.existsSync(p)) { 
-            const c = JSON.parse(fs.readFileSync(p, 'utf8')); 
-            return { 
-                enabled: c.enabled === true, 
-                likeOn: c.likeOn === true,
-                selfOn: c.selfOn === true
-            }; 
-        }
+        if (fs.existsSync(p)) { const c = JSON.parse(fs.readFileSync(p, 'utf8')); return { enabled: c.enabled === true, reactOn: c.reactOn === true }; }
     } catch (e) {}
-    return { enabled: false, likeOn: false, selfOn: false };
+    return { enabled: false, reactOn: false };
 }
 
 function getBotMode() {
     try {
         const p = path.join(__dirname, 'data', 'messageCount.json');
-        if (fs.existsSync(p)) { const d = JSON.parse(fs.readFileSync(p, 'utf8')); if (typeof d.isPublic === 'boolean') return d.isPublic ? 'Public' : 'Private'; }
-        return 'Public';
-    } catch (e) { return 'Public'; }
+        if (fs.existsSync(p)) { const d = JSON.parse(fs.readFileSync(p, 'utf8')); if (typeof d.isPublic === 'boolean') return d.isPublic ? 'PUBLIC 🌐' : 'PRIVATE 🔒'; }
+        return 'PUBLIC 🌐';
+    } catch (e) { return 'PUBLIC 🌐'; }
 }
 
 // ✅ Memory guard
@@ -132,7 +98,7 @@ setInterval(() => {
     }
     if (memMB > 700) {
         console.log('🔴 Critical memory - restarting');
-        process.exit(1);
+        process.exit(1); // PM2 or panel will restart it
     }
 }, 5 * 60 * 1000);
 
@@ -174,21 +140,6 @@ async function startXeonBotInc() {
             msgRetryCounterCache, defaultQueryTimeoutMs: 60000, connectTimeoutMs: 60000, keepAliveIntervalMs: 10000,
         });
 
-        // ✅ GLOBAL FIX: Strip contextInfo from ALL outgoing messages
-        const originalSendMessage = XeonBotInc.sendMessage;
-        XeonBotInc.sendMessage = async function (jid, content, opts = {}) {
-            if (typeof content === 'string') {
-                content = { text: content };
-            }
-            if (content.contextInfo) {
-                delete content.contextInfo;
-            }
-            if (opts.contextInfo) {
-                delete opts.contextInfo;
-            }
-            return originalSendMessage.call(this, jid, content, opts);
-        };
-
         XeonBotInc.ev.on('creds.update', saveCreds);
         store.bind(XeonBotInc.ev);
 
@@ -199,14 +150,7 @@ async function startXeonBotInc() {
                 mek.message = (Object.keys(mek.message)[0] === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message;
 
                 if (mek.key && mek.key.remoteJid === 'status@broadcast') {
-                    if (mek.key.fromMe) {
-                        // Only process own status if selfOn is enabled
-                        const statusConfig = readStatusConfig();
-                        if (statusConfig.enabled && statusConfig.selfOn) {
-                            handleStatusUpdate(XeonBotInc, chatUpdate).catch(err => console.error("Status view error:", err.message));
-                        }
-                        return;
-                    }
+                    if (mek.key.fromMe) return;
                     storeMessage(XeonBotInc, mek);
                     const statusConfig = readStatusConfig();
                     if (statusConfig.enabled === true) {
@@ -220,7 +164,7 @@ async function startXeonBotInc() {
 
                 try { await handleMessages(XeonBotInc, chatUpdate, true); } catch (err) {
                     if (mek.key?.remoteJid && mek.key.remoteJid !== 'status@broadcast') {
-                        await XeonBotInc.sendMessage(mek.key.remoteJid, { text: '❌ Error processing message.' }).catch(() => {});
+                        await XeonBotInc.sendMessage(mek.key.remoteJid, { text: '❌ Error processing message.', contextInfo: { forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363406588763460@newsletter', newsletterName: 'Gᴀᴀᴊᴜ-Xᴍᴅ', serverMessageId: -1 } } }).catch(() => {});
                     }
                 }
             } catch (err) {}
@@ -239,7 +183,7 @@ async function startXeonBotInc() {
 
         if (pairingCode && !XeonBotInc.authState.creds.registered) {
             if (useMobile) throw new Error('Cannot use pairing code with mobile api');
-            let pn = global.phoneNumber || await question(chalk.bgBlack(chalk.greenBright(`WhatsApp number (2348155763709): `)));
+            let pn = global.phoneNumber || await question(chalk.bgBlack(chalk.greenBright(`WhatsApp number (2348038915922): `)));
             pn = pn.replace(/[^0-9]/g, '');
             if (!require('awesome-phonenumber')('+' + pn).isValid()) { console.log(chalk.red('Invalid number.')); process.exit(1); }
             setTimeout(async () => { try { let code = await XeonBotInc.requestPairingCode(pn); code = code?.match(/.{1,4}/g)?.join("-") || code; console.log(chalk.black(chalk.bgGreen(`Code: `)), chalk.black(chalk.white(code))); } catch (e) { console.error('Error:', e); } }, 3000);
@@ -253,22 +197,7 @@ async function startXeonBotInc() {
             if (connection == "open") {
                 console.log(chalk.cyan(`🌿Connected => ` + JSON.stringify(XeonBotInc.user, null, 2)));
                 reconnectAttempts = 0;
-
-                // ✅ Pre-load groups into store
-                try {
-                    console.log('📂 Pre-loading groups into store...');
-                    const groups = await XeonBotInc.groupFetchAllParticipating();
-                    const groupList = Object.values(groups);
-                    console.log(`✅ Loaded ${groupList.length} groups into store`);
-                    for (const group of groupList) {
-                        if (store.chats) {
-                            store.chats[group.id] = { id: group.id, ...group };
-                        }
-                    }
-                } catch (e) {
-                    console.error('❌ Failed to pre-load groups:', e.message);
-                }
-
+                
                 // ✅ Session backup every hour
                 setInterval(() => {
                     try {
@@ -280,94 +209,12 @@ async function startXeonBotInc() {
                         console.error('❌ Session backup failed:', e.message);
                     }
                 }, 60 * 60 * 1000);
-
+                
                 try {
                     const botNumber = XeonBotInc.user.id.split(':')[0] + '@s.whatsapp.net';
                     const time = new Date().toLocaleString('en-US', { timeZone: settings.timezone || 'Africa/Lagos', hour12: true, hour: '2-digit', minute: '2-digit', second: '2-digit', day: '2-digit', month: '2-digit', year: 'numeric' });
-
-                    // ✅ Your activation message as text (caption)
-                    const activationMessage = `╭──❍「 *GAAJU-XMD* 」❍
-╰───★─☆─♪♪─❍
-
-╭──❍「 *BOT CONNECTED* 」❍
-├
-├• *📅 Date:* ${time.split(',')[0] || time}
-├• *⌚ Time:* ${time.split(', ')[1] || time}
-├• *✅ Status:* Online
-├• *💻 Version:* ${settings.version}
-├• *👤 Owner:* ${settings.botOwner}
-├• *📞 Contact:* ${settings.ownerNumber}
-├• *🌐 Prefix:* ${settings.prefix}
-├• *🔒 Mode:* ${getBotMode()}
-├• *💡 Commands:* ${getCommandCount()}+
-├
-╰─┬─★─☆─♪♪─❍
-
-╭──❍「 *QUICK START* 」❍
-├
-├• *📂 .menu*    → All commands
-├• *📖 .help*    → Bot guide
-├• *📞 .owner*   → Contact owner
-├• *⚙️ .settings* → Bot settings
-├• *📶 .ping*    → Check speed
-├• *🔄 .update*  → Update bot
-├
-╰─┬─★─☆─♪♪─❍
-
-╭──❍「 *CONNECT* 」❍
-├
-├• 💬 Support Group
-├• 📺 YouTube Channel
-├• ⭐ GitHub Repo
-├• 🔔 Channel Updates
-├
-╰─┬─★─☆─♪♪─❍
-
-╭──❍「 *LINKS* 」❍
-├
-├• *🔗 Channel:* ${global.channelLink}
-├
-├• *💬 Support:* ${global.supportLink || 'https://chat.whatsapp.com/HgGLuDF6ZNABneNTbdrtUQ?mode=hqrt1'}
-├
-├• *📺 YouTube:* ${global.ytch || 'https://youtube.com/@Xchristech'}
-├
-├• *⭐ GitHub:* https://github.com/Xchristech2 
-├
-╰─┬─★─☆─♪♪─❍
-
-╭──❍「 *COPYRIGHT* 」❍
-├
-├• © 2025-2026
-├• GAAJU-XMD
-├• All Rights Reserved.
-├
-╰───★─☆─♪♪─❍`;
-
-                    // ✅ Step 1: Try to send as image + caption
-                    let imageBuffer;
-                    const imgPath = path.join(__dirname, 'assets', 'bot_image.jpg');
-                    const repoImgUrl = 'https://raw.githubusercontent.com/Xchristech2/GAAJU-XMD/main/assets/bot_image.jpg';
-
-                    if (fs.existsSync(imgPath)) {
-                        imageBuffer = fs.readFileSync(imgPath);
-                    } else {
-                        try {
-                            const res = await fetch(repoImgUrl);
-                            if (res.ok) imageBuffer = await res.buffer();
-                        } catch (e) {}
-                    }
-
-                    if (imageBuffer) {
-                        // ✅ Send as image + caption (NO contextInfo)
-                        await XeonBotInc.sendMessage(botNumber, {
-                            image: imageBuffer,
-                            caption: activationMessage
-                        });
-                    } else {
-                        // ✅ Fallback: send as text only
-                        await XeonBotInc.sendMessage(botNumber, { text: activationMessage });
-                    }
-
+                    const activationMessage = `╭──❍「 *BOT ACTIVATED* 」❍\n├• 📅 ${time}\n├• ✅ Status: ONLINE & READY\n├• 💻 Version: ${settings.version}\n├• 👤 Owner: ${settings.botOwner}\n├• 📞 Contact: ${settings.ownerNumber}\n├• 🌐 Prefix: ${settings.prefix}\n├• 💻 Mode: ${getBotMode()}\n├• 💡 ${getCommandCount()}+ Commands\n╰─┬─★─☆─♪♪─❍\n╭─┴❍「 *QUICK START* 」❍\n◈ • .menu - All commands\n◈ • .help - Bot guide\n◈ • .owner - Contact owner\n◈ • .settings - Settings\n◈ • .ping - Check speed\n◈ • .update - Update bot\n╰─┬─★─☆─♪♪─❍\n╭─┴❍「 *CONNECT* 」❍\n◈ • 💬 Support Group\n◈ • 📺 YouTube Channel\n◈ • ⭐ GitHub Repo\n◈ • 🔔 Channel Updates\n╰───★─☆─♪♪─❍\n\n*🔗 Channel:* ${global.channelLink}\n*💬 Support:* https://chat.whatsapp.com/HgGLuDF6ZNABneNTbdrtUQ?mode=hqrt1\n*📺 YouTube:* https://youtube.com/@Xchristech\n*💻 GitHub:* https://github.com/Xchristech2\n\n🤖 GAAJU-XMD - Professional WhatsApp Bot`;
+                    await XeonBotInc.sendMessage(botNumber, { text: activationMessage, contextInfo: { forwardingScore: 1, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363406588763460@newsletter', newsletterName: 'Gᴀᴀᴊᴜ-Xᴍᴅ', serverMessageId: -1 } } });
                 } catch (e) { console.error('Error sending activation:', e.message); }
                 await delay(1999);
                 console.log(chalk.yellow(`\n\n                  ${chalk.bold.blue(`[ ${global.botname || 'GAAJU-XMD'} ]`)}\n\n`));
@@ -417,7 +264,7 @@ async function startXeonBotInc() {
 process.on('SIGINT', async () => { try { require('./commands/autorecord').stopAllInfiniteRecordings(); } catch (e) {} try { require('./commands/autotyping').stopAllInfiniteTyping(); } catch (e) {} process.exit(0); });
 process.on('SIGTERM', async () => { try { require('./commands/autorecord').stopAllInfiniteRecordings(); } catch (e) {} try { require('./commands/autotyping').stopAllInfiniteTyping(); } catch (e) {} process.exit(0); });
 
-console.log(chalk.cyan('🚀 Starting GAAJU-MD Bot...'));
+console.log(chalk.cyan('🚀 Starting GAAJU-XMD Bot...'));
 startXeonBotInc().catch(error => { console.error('Fatal error:', error); process.exit(1); });
 
 process.on('uncaughtException', (err) => { console.error('Uncaught Exception:', err); });
